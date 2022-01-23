@@ -67,6 +67,12 @@ To automatically deploy the app, click the big orange button 👇
 
 3. Connect to [AWS Amplify Console](https://console.aws.amazon.com/amplify/home) and wait for build to start. You will be given a production URL and you are ready to take some notes!
 
+### Commands
+
+1. Build Command:  npm run-script build
+2. Start Command: npm run-script start
+3. Sync upstream changes: amplify pull
+
 
 ### License
 

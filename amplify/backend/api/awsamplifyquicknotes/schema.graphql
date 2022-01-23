@@ -1,0 +1,11 @@
+type Author @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Documents: [Document] @hasMany(indexName: "byAuthor", fields: ["id"])
+  name: String
+}
+
+type Document @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  content: String
+  authorID: ID @index(name: "byAuthor")
+}
